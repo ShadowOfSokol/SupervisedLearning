@@ -13,7 +13,7 @@ df = pd.DataFrame(data)
 print(df)
 
 # Візуліалізація данних
-plt.scatter(df["Days"], df["Candies"], color="blue")
+plt.scatter(df[data.keys()], df["Candies"], color="blue")
 plt.title("Графік залежності")
 plt.xlabel("Days")
 plt.ylabel("Candies")
